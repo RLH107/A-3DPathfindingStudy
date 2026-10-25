@@ -1,4 +1,4 @@
-# A-3DPathfinding
+# A-3DPathfindingStudy
 Estudo do Codigo de A-Star baseando se na modificação de um codigo 2D para um 3D, com a capacidade de identificar obstaculos, e com um sistema de debug.
 
 3D A-Star Pathfinding System*
