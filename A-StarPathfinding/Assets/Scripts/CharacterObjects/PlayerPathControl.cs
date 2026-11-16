@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerPathControl : MonoBehaviour
 {
-    private Grid_ grid;
+    private Grid_Generator gridGen;
     public PathFolower pathFolower;
 
     private Vector3 targetPos;
@@ -17,11 +17,11 @@ public class PlayerPathControl : MonoBehaviour
     //private bool debug = true; /**/
     /////////////////////////////////////
 
-    public void pathFolowerSetUp(Grid_ grid, Action afterWalkCall)
+    public void pathFolowerSetUp(Grid_Generator gridGen, Action afterWalkCall)
     {
-        this.grid = grid;
+        this.gridGen = gridGen;
         this.afterWalkCall = afterWalkCall;
-        pathFolower.pathFolowerSetUp(grid, Vector3.negativeInfinity, 0, AfterWalk);
+        pathFolower.pathFolowerSetUp(gridGen, Vector3.negativeInfinity, 0, AfterWalk);
     }
     public void serchNewPathSetUp(Vector3 targetPos)
     {

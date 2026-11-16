@@ -121,9 +121,8 @@ public class Grid_
     /// ---------------- Grid Functions ----------------- ///
     /////////////////////////////////////////////////////////
 
-    public void UpdateGrid(Vector3 newOriginPosition) //Updates the grid by checking the walkable status of all cells
+    public void UpdateGrid() //Updates the grid by checking the walkable status of all cells
     {
-        originPosition = newOriginPosition;
         checkWalkableAll();
         DisplayGridOutline();
     }
